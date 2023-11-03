@@ -7,7 +7,20 @@
     <%= csp_meta_tag %>
   </head>
 
-  <body>
+  <!-- scssやBootstrapをインストールできるようにしたら移動 -->
+  <style>
+    .sample-body{
+      background-color: #000000; 
+      color: #ffffff;
+      padding: 1rem;
+    }
+
+    .title-text{
+      text-align: center;
+    }
+  </style>
+
+  <body class = "sample-body">
     <%= yield %>
   </body>
 </html>
