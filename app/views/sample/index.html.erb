@@ -1,0 +1,22 @@
+<h1 class = "title-text">Sample</h1>
+<div class = "search-page">
+  <h3>検索フォーム</h3>
+  <div class= "form-partial">
+    <%= search_form_for @q, url: sample_index_url do |f| %>
+      <%= f.label :text_cont, 'Text Contains' %>
+      <br>
+      <%= f.search_field :text_cont %>
+      <br>
+      <%= f.submit 'Search', class: "search-btn" %>
+    <% end %>
+  </div>
+
+  <h3>検索結果</h3>
+  <div class = "result-partial">
+    <ul>
+      <% @samples.each do |sample| %>
+        <li class = "result"><%= sample.text %> - <%= sample.value %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
