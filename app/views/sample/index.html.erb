@@ -3,9 +3,9 @@
   <h3>検索フォーム</h3>
   <div class= "form-partial">
     <%= search_form_for @q, url: sample_index_url do |f| %>
-      <%= f.label :value_eq, 'Value Equals' %>
+      <%= f.label :text_cont, 'Text Contains' %>
       <br>
-      <%= f.search_field :value_eq %>
+      <%= f.search_field :text_cont %>
       <br>
       <%= f.submit 'Search', class: "search-btn" %>
     <% end %>
