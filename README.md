@@ -1,6 +1,7 @@
-This repository is a template for a project that allows rails7 and mysql to run in a docker environment.
+DockerでRails7.x + Mysqlの環境の雛形を作って、サンプルとして以下のgemの利用を確認したリポジトリです。  
 
-The following is a list of additional gems that are installed in rails.  
+以下のgemが利用可能なのを確認済みです
+・Ruby3.0.0  
+・rails7.x系  
 ・ransack  
-・discard  
-・kaminari
+・rspec-rails
